@@ -1,0 +1,34 @@
+.countries {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+@media screen and (min-width: 600px) and (max-width : 800px) {
+    .countries {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen  and (min-width : 800px) {
+    .countries {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.visitedCountry {
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+.searchBox {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.search {
+    padding: 10px;
+}
